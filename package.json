@@ -16,7 +16,6 @@
   "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io/)",
   "license": "MIT",
   "dependencies": {
-    "cross-spawn": "^6.0.4",
     "highland": "^2.11.1",
     "spawn-args": "^0.2.0"
   },
