@@ -1,0 +1,28 @@
+{
+  "name": "super-spawn",
+  "version": "1.0.0",
+  "description": "Spawn programs well, and good",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run build && npm run gentoc",
+    "test": "./node_modules/.bin/mocha test/run.js",
+    "build": "rollup -c",
+    "gentoc": "./node_modules/.bin/toc"
+  },
+  "keywords": [
+    "spawn",
+    "exec"
+  ],
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^6.0.4",
+    "highland": "^2.11.1",
+    "spawn-args": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "readme-toc": "^0.1.1",
+    "rollup": "^0.56.3"
+  }
+}
