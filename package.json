@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm run build && npm run gentoc",
-    "test": "./node_modules/.bin/mocha test/run.js",
+    "test": "mocha test/run.js",
     "build": "rollup -c",
-    "gentoc": "./node_modules/.bin/toc"
+    "gentoc": "doctoc --title '**Contents**' README.md"
   },
   "keywords": [
     "spawn",
@@ -21,8 +21,19 @@
     "spawn-args": "^0.2.0"
   },
   "devDependencies": {
+    "doctoc": "^1.3.1",
     "mocha": "^5.0.1",
-    "readme-toc": "^0.1.1",
     "rollup": "^0.56.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/super_spawn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/super_spawn/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/super_spawn#readme"
 }

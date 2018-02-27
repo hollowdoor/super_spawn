@@ -6,22 +6,25 @@ Install
 
 `npm install super-spawn`
 
-<!-- toc -->
-* [Install](#install)
-* [Usage](#usage)
-* [The exports](#the-exports)
-* [The factories](#the-factories)
-  * [createSpawn(originalSpawn)](#createspawnoriginalspawn)
-  * [spawn like function](#spawn-like-function)
-    * [The template syntax](#the-template-syntax)
-    * [options, and defaults](#options-and-defaults)
-* [The object returned by spawn](#the-object-returned-by-spawn)
-  * [ChildProcessWrapper()](#childprocesswrapper)
-  * [streams](#streams)
-  * [c.pipeTo(dest)](#cpipetodest)
-* [About](#about)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
 
-<!-- toc stop -->
+- [Usage](#usage)
+- [The exports](#the-exports)
+- [The factories](#the-factories)
+  - [createSpawn(originalSpawn)](#createspawnoriginalspawn)
+  - [spawn like function](#spawn-like-function)
+    - [The template syntax](#the-template-syntax)
+    - [options, and defaults](#options-and-defaults)
+- [The object returned by spawn](#the-object-returned-by-spawn)
+  - [ChildProcessWrapper()](#childprocesswrapper)
+  - [streams](#streams)
+  - [c.pipeTo(dest)](#cpipetodest)
+- [About](#about)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Usage
 ---
 

@@ -4,7 +4,7 @@ const assert = require('assert');
 
 describe('spawn', ()=>{
     it('output should equal readdir output', (done)=>{
-        const c = spawn(`ls %(quote)`, {
+        const c = spawn(`ls -a %(quote)`, {
             quote: '-Q'
         }, {
             stdio: [process.stdin, 'pipe', process.stderr]
@@ -15,6 +15,7 @@ describe('spawn', ()=>{
         .sort()
         .toArray(function(a){
             const files = readdirSync('./')
+            .concat(['.', '..'])
             .map(s=>`"${s}"`)
             .concat([''])
             .sort();
